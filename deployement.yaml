@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: demo-app
-          image: raaiha/devops-demo-app:latest
+          image: raaiha/devops-demo-app:v2
           ports:
             - containerPort: 8080

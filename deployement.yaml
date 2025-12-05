@@ -1,4 +1,3 @@
-#made update
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -16,5 +15,6 @@ spec:
       containers:
         - name: demo-app
           image: raaiha/devops-demo-app:latest
+          imagePullPolicy: Always    # ← add this line
           ports:
             - containerPort: 8080

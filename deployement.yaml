@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: demo-app
+  labels:
+    app: demo-app
 spec:
   replicas: 1
   selector:
@@ -15,6 +17,5 @@ spec:
       containers:
         - name: demo-app
           image: raaiha/devops-demo-app:latest
-          imagePullPolicy: Always    # ← add this line
           ports:
             - containerPort: 8080

@@ -17,6 +17,6 @@ spec:
       containers:
         - name: demo-app
           # Update this tag manually to the new commit SHA after CI pushes
-          image: raaiha/devops-demo-app:113c47201ee5173ad6c59a710aa58de1d9d895a6
+          image: raaiha/devops-demo-app:ed42ce710e1a506957fd52b1fb5f241d00ff60f3
           ports:
             - containerPort: 8080
